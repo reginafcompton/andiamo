@@ -1,6 +1,6 @@
 == README
 
-"Andiamo" is a simple app, which helps users store, organize, and search travel information about participants of Chamber Music Campania and the Lucera Vocal Institute.
+"Andiamo" helps users store, organize, and search travel information about participants of Chamber Music Campania and the Lucera Vocal Institute. It displays the particpants' arrival and departure dates, times, and locations, helping the festival directors know when and where to meet musicians traveling to Italy.
 
 Some code-y things to know:
 

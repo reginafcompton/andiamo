@@ -25,6 +25,27 @@ class ParticipantsController < ApplicationController
 
   end
 
+  def edit
+    @participant = Participant.find(params[:id])
+  end
+
+  def update
+    @participant = Participant.find(params[:id])
+
+    if @participant.update(participant_params)
+        redirect_to root_path
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @participant = Participant.find(params[:id])
+    @participant.destroy
+
+    redirect_to root_path
+  end
+
   def participant_params
       params.require(:participant).permit(:name, :arrival_time, :arrival_day_id, :arrival_city_id,  :arrival_mode,  :departure_time, :departure_day_id, :departure_city_id, :departure_mode)
     end

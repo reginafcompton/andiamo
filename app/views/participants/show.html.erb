@@ -8,4 +8,6 @@
 <%= @participant.departure_city.name %>
 <%= @participant.departure_mode %>
 
-<%= link_to "Edit" %>
+<%= link_to "Edit", edit_participant_path %>
+
+<%= link_to "Remove", participant_path, method: :delete %>

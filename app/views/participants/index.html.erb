@@ -1,7 +1,13 @@
-<% @participants.each do |participant| %>
+<section>
+  <div class="container">
+    <% @participants.each do |participant| %>
 
-  <%= link_to "#{participant.name}", participant_path(participant) %>
+    <div>
+      <%= link_to "#{participant.name}", participant_path(participant) %>
+    </div>
 
-<% end %>
+    <% end %>
 
-<%= link_to "Add participant", new_participant_path %>
+    <%= link_to "Add participant", new_participant_path %>
+  </div>
+</section>

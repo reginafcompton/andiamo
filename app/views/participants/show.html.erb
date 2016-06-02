@@ -1,13 +1,36 @@
-<%= @participant.name %>
-<%= @participant.arrival_time %>
-<%= @participant.arrival_day.day %>
-<%= @participant.arrival_city.name %>
-<%= @participant.arrival_mode %>
-<%= @participant.departure_time %>
-<%= @participant.departure_day.day %>
-<%= @participant.departure_city.name %>
-<%= @participant.departure_mode %>
+<div class="container">
+  <div>
+    <%= @participant.name %>
+  </div>
+  <div>
+    Arrival: <%= @participant.arrival_day.day %> @ <%= @participant.arrival_time %>
+  </div>
+  <div>
+    <%= @participant.arrival_city.name %>
+  </div>
+  <div>
+    <%= @participant.arrival_mode %>
+  </div>
+  <div>
+    Departure: <%= @participant.departure_day.day %> @ <%= @participant.departure_time %>
+  </div>
+  <div>
+    <%= @participant.departure_city.name %>
+  </div>
+  <div>
+    <%= @participant.departure_mode %>
+  </div>
 
-<%= link_to "Edit", edit_participant_path %>
+  <div>
+    <%= link_to "Edit", edit_participant_path %>
+  </div>
 
-<%= link_to "Remove", participant_path, method: :delete %>
+  <div>
+    <%= link_to "Remove", participant_path, method: :delete %>
+  </div>
+
+  <div>
+    <%= link_to "Home", root_path %>
+  </div>
+
+</div>

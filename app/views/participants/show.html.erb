@@ -1,3 +1,13 @@
 <%= @participant.name %>
+<%= @participant.arrival_time %>
 <%= @participant.arrival_day.day %>
 <%= @participant.arrival_city.name %>
+<%= @participant.arrival_mode %>
+<%= @participant.departure_time %>
+<%= @participant.departure_day.day %>
+<%= @participant.departure_city.name %>
+<%= @participant.departure_mode %>
+
+<%= link_to "Edit", edit_participant_path %>
+
+<%= link_to "Remove", participant_path, method: :delete %>
